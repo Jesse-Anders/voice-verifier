@@ -1,0 +1,43 @@
+# Audio / voice data — never commit
+*.wav
+*.m4a
+*.caf
+*.aac
+*.flac
+*.mp4
+*.mov
+
+# Model weights / checkpoints — fetched or generated, never committed
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.mlmodel
+*.mlpackage
+pretrained_models/
+
+# Secrets / signing / environment
+.env
+.env.*
+*.pem
+*.p12
+*.mobileprovision
+*.cer
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Xcode / CocoaPods
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+Pods/
+
+# OS
+.DS_Store

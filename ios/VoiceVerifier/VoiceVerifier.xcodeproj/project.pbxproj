@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D68CF683DFC281C51C660303 /* Pods_VoiceVerifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27796260DFD4221B787416E9 /* Pods_VoiceVerifier.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		EE643E4F2E9C3B05004B1238 /* Pods_VoiceVerifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27796260DFD4221B787416E9 /* Pods_VoiceVerifier.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		EE7FFD292E9C3F4000D652CB /* EmbedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD172E9C3F4000D652CB /* EmbedAPI.swift */; };
+		EE7FFD2A2E9C3F4000D652CB /* VoiceVerifierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD132E9C3F4000D652CB /* VoiceVerifierApp.swift */; };
+		EE7FFD2B2E9C3F4000D652CB /* SpeakerVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD192E9C3F4000D652CB /* SpeakerVerifier.swift */; };
+		EE7FFD2C2E9C3F4000D652CB /* EnrollmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD102E9C3F4000D652CB /* EnrollmentView.swift */; };
+		EE7FFD2D2E9C3F4000D652CB /* TorchModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD1B2E9C3F4000D652CB /* TorchModule.mm */; };
+		EE7FFD2E2E9C3F4000D652CB /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD152E9C3F4000D652CB /* AudioEngine.swift */; };
+		EE7FFD2F2E9C3F4000D652CB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD272E9C3F4000D652CB /* Item.swift */; };
+		EE7FFD302E9C3F4000D652CB /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD242E9C3F4000D652CB /* ProfileStore.swift */; };
+		EE7FFD312E9C3F4000D652CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD0F2E9C3F4000D652CB /* ContentView.swift */; };
+		EE7FFD322E9C3F4000D652CB /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD112E9C3F4000D652CB /* RecordingView.swift */; };
+		EE7FFD332E9C3F4000D652CB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD122E9C3F4000D652CB /* SettingsView.swift */; };
+		EE7FFD342E9C3F4000D652CB /* ModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7FFD182E9C3F4000D652CB /* ModelProvider.swift */; };
+		EE7FFD352E9C3F4000D652CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7FFD262E9C3F4000D652CB /* Assets.xcassets */; };
+		EE7FFD362E9C3F4000D652CB /* scorer.pt in Resources */ = {isa = PBXBuildFile; fileRef = EE7FFD202E9C3F4000D652CB /* scorer.pt */; };
+		EE7FFD372E9C3F4000D652CB /* ecapa_embedding.pt in Resources */ = {isa = PBXBuildFile; fileRef = EE7FFD1D2E9C3F4000D652CB /* ecapa_embedding.pt */; };
+		EE7FFD382E9C3F4000D652CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7FFD222E9C3F4000D652CB /* Preview Assets.xcassets */; };
+		EE7FFD392E9C3F4000D652CB /* ecapa_embedding_scripted.pt in Resources */ = {isa = PBXBuildFile; fileRef = EE7FFD1F2E9C3F4000D652CB /* ecapa_embedding_scripted.pt */; };
+		EE7FFD3A2E9C3F4000D652CB /* ecapa_embedding_sbtrace.pt in Resources */ = {isa = PBXBuildFile; fileRef = EE7FFD1E2E9C3F4000D652CB /* ecapa_embedding_sbtrace.pt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEB9D70F2E845E3100364FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEB9D6F42E845E2F00364FD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEB9D6FB2E845E2F00364FD5;
+			remoteInfo = VoiceVerifier;
+		};
+		EEB9D7192E845E3100364FD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEB9D6F42E845E2F00364FD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEB9D6FB2E845E2F00364FD5;
+			remoteInfo = VoiceVerifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27796260DFD4221B787416E9 /* Pods_VoiceVerifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceVerifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		673466A4B039CBFB3000909D /* Pods-VoiceVerifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceVerifier.debug.xcconfig"; path = "Target Support Files/Pods-VoiceVerifier/Pods-VoiceVerifier.debug.xcconfig"; sourceTree = "<group>"; };
+		C4755D97BF051964C17A866D /* Pods-VoiceVerifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceVerifier.release.xcconfig"; path = "Target Support Files/Pods-VoiceVerifier/Pods-VoiceVerifier.release.xcconfig"; sourceTree = "<group>"; };
+		EE643E542E9C3B05004B1238 /* VoiceVerifier2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceVerifier2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7FFD0F2E9C3F4000D652CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE7FFD102E9C3F4000D652CB /* EnrollmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentView.swift; sourceTree = "<group>"; };
+		EE7FFD112E9C3F4000D652CB /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		EE7FFD122E9C3F4000D652CB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EE7FFD132E9C3F4000D652CB /* VoiceVerifierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceVerifierApp.swift; sourceTree = "<group>"; };
+		EE7FFD152E9C3F4000D652CB /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		EE7FFD172E9C3F4000D652CB /* EmbedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbedAPI.swift; sourceTree = "<group>"; };
+		EE7FFD182E9C3F4000D652CB /* ModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProvider.swift; sourceTree = "<group>"; };
+		EE7FFD192E9C3F4000D652CB /* SpeakerVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerVerifier.swift; sourceTree = "<group>"; };
+		EE7FFD1A2E9C3F4000D652CB /* TorchModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorchModule.h; sourceTree = "<group>"; };
+		EE7FFD1B2E9C3F4000D652CB /* TorchModule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TorchModule.mm; sourceTree = "<group>"; };
+		EE7FFD1D2E9C3F4000D652CB /* ecapa_embedding.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ecapa_embedding.pt; sourceTree = "<group>"; };
+		EE7FFD1E2E9C3F4000D652CB /* ecapa_embedding_sbtrace.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ecapa_embedding_sbtrace.pt; sourceTree = "<group>"; };
+		EE7FFD1F2E9C3F4000D652CB /* ecapa_embedding_scripted.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ecapa_embedding_scripted.pt; sourceTree = "<group>"; };
+		EE7FFD202E9C3F4000D652CB /* scorer.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = scorer.pt; sourceTree = "<group>"; };
+		EE7FFD222E9C3F4000D652CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE7FFD242E9C3F4000D652CB /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+		EE7FFD262E9C3F4000D652CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE7FFD272E9C3F4000D652CB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		EEB9D6FC2E845E2F00364FD5 /* VoiceVerifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceVerifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB9D70E2E845E3100364FD5 /* VoiceVerifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceVerifierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB9D7182E845E3100364FD5 /* VoiceVerifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceVerifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EE643E552E9C3B06004B1238 /* Exceptions for "VoiceVerifier" folder in "VoiceVerifier2" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				App/ContentView.swift,
+				App/EnrollmentView.swift,
+				App/RecordingView.swift,
+				"App/RecordingView8-29-bu.swift",
+				App/SettingsView.swift,
+				App/VoiceVerifierApp.swift,
+				Assets.xcassets,
+				Audio/AudioEngine.swift,
+				Item.swift,
+				ML/EmbedAPI.swift,
+				ML/ModelProvider.swift,
+				ML/SpeakerVerifier.swift,
+				ML/TorchModule.mm,
+				Model/ecapa_embedding_sbtrace.pt,
+				Model/ecapa_embedding_scripted.pt,
+				Model/ecapa_embedding.pt,
+				Model/scorer.pt,
+				"Preview Content/Preview Assets.xcassets",
+				Storage/ProfileStore.swift,
+			);
+			target = EE643E4B2E9C3B05004B1238 /* VoiceVerifier2 */;
+		};
+		EE9940702EB316080037199F /* Exceptions for "VoiceVerifier" folder in "VoiceVerifier" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"App/RecordingView8-29-bu.swift",
+			);
+			target = EEB9D6FB2E845E2F00364FD5 /* VoiceVerifier */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EEB9D6FE2E845E2F00364FD5 /* VoiceVerifier */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EE9940702EB316080037199F /* Exceptions for "VoiceVerifier" folder in "VoiceVerifier" target */,
+				EE643E552E9C3B06004B1238 /* Exceptions for "VoiceVerifier" folder in "VoiceVerifier2" target */,
+			);
+			path = VoiceVerifier;
+			sourceTree = "<group>";
+		};
+		EEB9D7112E845E3100364FD5 /* VoiceVerifierTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VoiceVerifierTests;
+			sourceTree = "<group>";
+		};
+		EEB9D71B2E845E3100364FD5 /* VoiceVerifierUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VoiceVerifierUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE643E4E2E9C3B05004B1238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE643E4F2E9C3B05004B1238 /* Pods_VoiceVerifier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB9D6F92E845E2F00364FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D68CF683DFC281C51C660303 /* Pods_VoiceVerifier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB9D70B2E845E3100364FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB9D7152E845E3100364FD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BFA00BF18E43BFD25497CBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				673466A4B039CBFB3000909D /* Pods-VoiceVerifier.debug.xcconfig */,
+				C4755D97BF051964C17A866D /* Pods-VoiceVerifier.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		EE7FFD142E9C3F4000D652CB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FFD0F2E9C3F4000D652CB /* ContentView.swift */,
+				EE7FFD102E9C3F4000D652CB /* EnrollmentView.swift */,
+				EE7FFD112E9C3F4000D652CB /* RecordingView.swift */,
+				EE7FFD122E9C3F4000D652CB /* SettingsView.swift */,
+				EE7FFD132E9C3F4000D652CB /* VoiceVerifierApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EE7FFD162E9C3F4000D652CB /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FFD152E9C3F4000D652CB /* AudioEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		EE7FFD1C2E9C3F4000D652CB /* ML */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FFD172E9C3F4000D652CB /* EmbedAPI.swift */,
+				EE7FFD182E9C3F4000D652CB /* ModelProvider.swift */,
+				EE7FFD192E9C3F4000D652CB /* SpeakerVerifier.swift */,
+				EE7FFD1A2E9C3F4000D652CB /* TorchModule.h */,
+				EE7FFD1B2E9C3F4000D652CB /* TorchModule.mm */,
+			);
+			path = ML;
+			sourceTree = "<group>";
+		};
+		EE7FFD212E9C3F4000D652CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FFD1D2E9C3F4000D652CB /* ecapa_embedding.pt */,
+				EE7FFD1E2E9C3F4000D652CB /* ecapa_embedding_sbtrace.pt */,
+				EE7FFD1F2E9C3F4000D652CB /* ecapa_embedding_scripted.pt */,
+				EE7FFD202E9C3F4000D652CB /* scorer.pt */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE7FFD232E9C3F4000D652CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FFD222E9C3F4000D652CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE7FFD252E9C3F4000D652CB /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FFD242E9C3F4000D652CB /* ProfileStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		EE7FFD282E9C3F4000D652CB /* VoiceVerifier2 */ = {
+			isa = PBXGroup;
+			children = (
+				EE7FFD142E9C3F4000D652CB /* App */,
+				EE7FFD162E9C3F4000D652CB /* Audio */,
+				EE7FFD1C2E9C3F4000D652CB /* ML */,
+				EE7FFD212E9C3F4000D652CB /* Model */,
+				EE7FFD232E9C3F4000D652CB /* Preview Content */,
+				EE7FFD252E9C3F4000D652CB /* Storage */,
+				EE7FFD262E9C3F4000D652CB /* Assets.xcassets */,
+				EE7FFD272E9C3F4000D652CB /* Item.swift */,
+			);
+			path = VoiceVerifier2;
+			sourceTree = "<group>";
+		};
+		EEB9D6F32E845E2F00364FD5 = {
+			isa = PBXGroup;
+			children = (
+				EE7FFD282E9C3F4000D652CB /* VoiceVerifier2 */,
+				EEB9D6FE2E845E2F00364FD5 /* VoiceVerifier */,
+				EEB9D7112E845E3100364FD5 /* VoiceVerifierTests */,
+				EEB9D71B2E845E3100364FD5 /* VoiceVerifierUITests */,
+				EEB9D6FD2E845E2F00364FD5 /* Products */,
+				8BFA00BF18E43BFD25497CBA /* Pods */,
+				F127576D8C465289BE600ECD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EEB9D6FD2E845E2F00364FD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEB9D6FC2E845E2F00364FD5 /* VoiceVerifier.app */,
+				EEB9D70E2E845E3100364FD5 /* VoiceVerifierTests.xctest */,
+				EEB9D7182E845E3100364FD5 /* VoiceVerifierUITests.xctest */,
+				EE643E542E9C3B05004B1238 /* VoiceVerifier2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F127576D8C465289BE600ECD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27796260DFD4221B787416E9 /* Pods_VoiceVerifier.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE643E4B2E9C3B05004B1238 /* VoiceVerifier2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE643E512E9C3B05004B1238 /* Build configuration list for PBXNativeTarget "VoiceVerifier2" */;
+			buildPhases = (
+				EE643E4C2E9C3B05004B1238 /* [CP] Check Pods Manifest.lock */,
+				EE643E4D2E9C3B05004B1238 /* Sources */,
+				EE643E4E2E9C3B05004B1238 /* Frameworks */,
+				EE643E502E9C3B05004B1238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EEB9D6FE2E845E2F00364FD5 /* VoiceVerifier */,
+			);
+			name = VoiceVerifier2;
+			productName = VoiceVerifier;
+			productReference = EE643E542E9C3B05004B1238 /* VoiceVerifier2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEB9D6FB2E845E2F00364FD5 /* VoiceVerifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB9D7222E845E3100364FD5 /* Build configuration list for PBXNativeTarget "VoiceVerifier" */;
+			buildPhases = (
+				2900C7AF36548052CFDF9BA3 /* [CP] Check Pods Manifest.lock */,
+				EEB9D6F82E845E2F00364FD5 /* Sources */,
+				EEB9D6F92E845E2F00364FD5 /* Frameworks */,
+				EEB9D6FA2E845E2F00364FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EEB9D6FE2E845E2F00364FD5 /* VoiceVerifier */,
+			);
+			name = VoiceVerifier;
+			productName = VoiceVerifier;
+			productReference = EEB9D6FC2E845E2F00364FD5 /* VoiceVerifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEB9D70D2E845E3100364FD5 /* VoiceVerifierTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB9D7252E845E3100364FD5 /* Build configuration list for PBXNativeTarget "VoiceVerifierTests" */;
+			buildPhases = (
+				EEB9D70A2E845E3100364FD5 /* Sources */,
+				EEB9D70B2E845E3100364FD5 /* Frameworks */,
+				EEB9D70C2E845E3100364FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEB9D7102E845E3100364FD5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EEB9D7112E845E3100364FD5 /* VoiceVerifierTests */,
+			);
+			name = VoiceVerifierTests;
+			productName = VoiceVerifierTests;
+			productReference = EEB9D70E2E845E3100364FD5 /* VoiceVerifierTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEB9D7172E845E3100364FD5 /* VoiceVerifierUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB9D7282E845E3100364FD5 /* Build configuration list for PBXNativeTarget "VoiceVerifierUITests" */;
+			buildPhases = (
+				EEB9D7142E845E3100364FD5 /* Sources */,
+				EEB9D7152E845E3100364FD5 /* Frameworks */,
+				EEB9D7162E845E3100364FD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEB9D71A2E845E3100364FD5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				EEB9D71B2E845E3100364FD5 /* VoiceVerifierUITests */,
+			);
+			name = VoiceVerifierUITests;
+			productName = VoiceVerifierUITests;
+			productReference = EEB9D7182E845E3100364FD5 /* VoiceVerifierUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEB9D6F42E845E2F00364FD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					EEB9D6FB2E845E2F00364FD5 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					EEB9D70D2E845E3100364FD5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = EEB9D6FB2E845E2F00364FD5;
+					};
+					EEB9D7172E845E3100364FD5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = EEB9D6FB2E845E2F00364FD5;
+					};
+				};
+			};
+			buildConfigurationList = EEB9D6F72E845E2F00364FD5 /* Build configuration list for PBXProject "VoiceVerifier" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEB9D6F32E845E2F00364FD5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EEB9D6FD2E845E2F00364FD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEB9D6FB2E845E2F00364FD5 /* VoiceVerifier */,
+				EEB9D70D2E845E3100364FD5 /* VoiceVerifierTests */,
+				EEB9D7172E845E3100364FD5 /* VoiceVerifierUITests */,
+				EE643E4B2E9C3B05004B1238 /* VoiceVerifier2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE643E502E9C3B05004B1238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7FFD352E9C3F4000D652CB /* Assets.xcassets in Resources */,
+				EE7FFD362E9C3F4000D652CB /* scorer.pt in Resources */,
+				EE7FFD372E9C3F4000D652CB /* ecapa_embedding.pt in Resources */,
+				EE7FFD382E9C3F4000D652CB /* Preview Assets.xcassets in Resources */,
+				EE7FFD392E9C3F4000D652CB /* ecapa_embedding_scripted.pt in Resources */,
+				EE7FFD3A2E9C3F4000D652CB /* ecapa_embedding_sbtrace.pt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB9D6FA2E845E2F00364FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB9D70C2E845E3100364FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB9D7162E845E3100364FD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2900C7AF36548052CFDF9BA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceVerifier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE643E4C2E9C3B05004B1238 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceVerifier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE643E4D2E9C3B05004B1238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE7FFD292E9C3F4000D652CB /* EmbedAPI.swift in Sources */,
+				EE7FFD2A2E9C3F4000D652CB /* VoiceVerifierApp.swift in Sources */,
+				EE7FFD2B2E9C3F4000D652CB /* SpeakerVerifier.swift in Sources */,
+				EE7FFD2C2E9C3F4000D652CB /* EnrollmentView.swift in Sources */,
+				EE7FFD2D2E9C3F4000D652CB /* TorchModule.mm in Sources */,
+				EE7FFD2E2E9C3F4000D652CB /* AudioEngine.swift in Sources */,
+				EE7FFD2F2E9C3F4000D652CB /* Item.swift in Sources */,
+				EE7FFD302E9C3F4000D652CB /* ProfileStore.swift in Sources */,
+				EE7FFD312E9C3F4000D652CB /* ContentView.swift in Sources */,
+				EE7FFD322E9C3F4000D652CB /* RecordingView.swift in Sources */,
+				EE7FFD332E9C3F4000D652CB /* SettingsView.swift in Sources */,
+				EE7FFD342E9C3F4000D652CB /* ModelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB9D6F82E845E2F00364FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB9D70A2E845E3100364FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB9D7142E845E3100364FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEB9D7102E845E3100364FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEB9D6FB2E845E2F00364FD5 /* VoiceVerifier */;
+			targetProxy = EEB9D70F2E845E3100364FD5 /* PBXContainerItemProxy */;
+		};
+		EEB9D71A2E845E3100364FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEB9D6FB2E845E2F00364FD5 /* VoiceVerifier */;
+			targetProxy = EEB9D7192E845E3100364FD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE643E522E9C3B05004B1238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673466A4B039CBFB3000909D /* Pods-VoiceVerifier.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceVerifier/Preview Content\"";
+				DEVELOPMENT_TEAM = H24V8X8565;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VoiceVerifier2;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need Access to Record Voice for Recognition.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"-std=gnu++17",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Jesse.VoiceVerifier2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VoiceVerifier-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE643E532E9C3B05004B1238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4755D97BF051964C17A866D /* Pods-VoiceVerifier.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceVerifier/Preview Content\"";
+				DEVELOPMENT_TEAM = H24V8X8565;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VoiceVerifier2;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need Access to Record Voice for Recognition.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"-std=gnu++17",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Jesse.VoiceVerifier2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VoiceVerifier-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EEB9D7202E845E3100364FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEB9D7212E845E3100364FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEB9D7232E845E3100364FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673466A4B039CBFB3000909D /* Pods-VoiceVerifier.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceVerifier/Preview Content\"";
+				DEVELOPMENT_TEAM = H24V8X8565;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need Access to Record Voice for Recognition.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"-std=gnu++17",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Jesse.VoiceVerifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VoiceVerifier-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEB9D7242E845E3100364FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4755D97BF051964C17A866D /* Pods-VoiceVerifier.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"VoiceVerifier/Preview Content\"";
+				DEVELOPMENT_TEAM = H24V8X8565;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need Access to Record Voice for Recognition.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(inherited)",
+					"-std=gnu++17",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Jesse.VoiceVerifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "VoiceVerifier-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EEB9D7262E845E3100364FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H24V8X8565;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jesse.VoiceVerifierTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceVerifier.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceVerifier";
+			};
+			name = Debug;
+		};
+		EEB9D7272E845E3100364FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H24V8X8565;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jesse.VoiceVerifierTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceVerifier.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VoiceVerifier";
+			};
+			name = Release;
+		};
+		EEB9D7292E845E3100364FD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H24V8X8565;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jesse.VoiceVerifierUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceVerifier;
+			};
+			name = Debug;
+		};
+		EEB9D72A2E845E3100364FD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H24V8X8565;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jesse.VoiceVerifierUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceVerifier;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE643E512E9C3B05004B1238 /* Build configuration list for PBXNativeTarget "VoiceVerifier2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE643E522E9C3B05004B1238 /* Debug */,
+				EE643E532E9C3B05004B1238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB9D6F72E845E2F00364FD5 /* Build configuration list for PBXProject "VoiceVerifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB9D7202E845E3100364FD5 /* Debug */,
+				EEB9D7212E845E3100364FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB9D7222E845E3100364FD5 /* Build configuration list for PBXNativeTarget "VoiceVerifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB9D7232E845E3100364FD5 /* Debug */,
+				EEB9D7242E845E3100364FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB9D7252E845E3100364FD5 /* Build configuration list for PBXNativeTarget "VoiceVerifierTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB9D7262E845E3100364FD5 /* Debug */,
+				EEB9D7272E845E3100364FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB9D7282E845E3100364FD5 /* Build configuration list for PBXNativeTarget "VoiceVerifierUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB9D7292E845E3100364FD5 /* Debug */,
+				EEB9D72A2E845E3100364FD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEB9D6F42E845E2F00364FD5 /* Project object */;
+}
