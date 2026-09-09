@@ -4,7 +4,11 @@
 
 > Self-directed project built for credit in the Ferris State University AI program (~10 weeks, documented weekly). iOS (Swift) client + Python (FastAPI) inference server.
 
-> 🎧 **Video demo coming soon.** Voice Verifier is audio-driven — the whole point is *which* speech it keeps — so a short narrated walkthrough does it justice in a way a silent clip can't.
+### 🎧 One-minute walkthrough
+
+<video src="https://github.com/Jesse-Anders/voice-verifier/raw/main/images/voice-verifier-brief-walkthrough.m4v" controls muted width="620"></video>
+
+▶ **[Watch the one-minute walkthrough](images/voice-verifier-brief-walkthrough.m4v)** — a quick tour of the basic app flow: enroll a speaker, run a recording through, and see which speech is kept. *(Click the link if the inline player doesn't load in your browser.)*
 
 ---
 
@@ -71,6 +75,12 @@ The heavy ML runs on the server; the privacy-sensitive audio slicing and the acc
 | Profiles | Test result |
 | --- | --- |
 | ![Enrolled speaker profiles](images/profiles.png) | ![A test clip scored against the enrolled profile](images/result-score.png) |
+
+**Recording analysis view** — after a recording is processed, each region is marked with its verdict: **green = accepted** (matched the enrolled speaker), **white = rejected**. Only the green regions are written to the output WAV.
+
+<p align="center">
+  <img src="images/recording-analysis-app-view.png" alt="Recording analysis view — green regions are accepted (enrolled speaker), white regions are rejected" width="320">
+</p>
 
 ## Tech stack
 
