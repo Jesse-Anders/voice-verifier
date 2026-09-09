@@ -79,7 +79,7 @@ The heavy ML runs on the server; the privacy-sensitive audio slicing and the acc
 **Recording analysis view** — after a recording is processed, each region is marked with its verdict: **green = accepted** (matched the enrolled speaker), **white = rejected**. Only the green regions are written to the output WAV.
 
 <p align="center">
-  <img src="images/recording-analysis-app-view.png" alt="Recording analysis view — green regions are accepted (enrolled speaker), white regions are rejected" width="320">
+  <img src="images/recording-analysis-app-view.png" alt="Recording analysis view — green regions are accepted (enrolled speaker), white regions are rejected" width="680">
 </p>
 
 ## Tech stack
