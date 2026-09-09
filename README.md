@@ -6,9 +6,9 @@
 
 ### 🎧 One-minute walkthrough
 
-<video src="https://github.com/Jesse-Anders/voice-verifier/raw/main/images/voice-verifier-brief-walkthrough.m4v" controls muted width="620"></video>
+<video src="https://github.com/Jesse-Anders/voice-verifier/raw/main/images/voice-verifier-brief-walkthrough.mp4" controls muted width="620"></video>
 
-▶ **[Watch the one-minute walkthrough](images/voice-verifier-brief-walkthrough.m4v)** — a quick tour of the basic app flow: enroll a speaker, run a recording through, and see which speech is kept. *(Click the link if the inline player doesn't load in your browser.)*
+▶ **[Watch the one-minute walkthrough](images/voice-verifier-brief-walkthrough.mp4)** — a quick tour of the basic app flow: enroll a speaker, run a recording through, and see which speech is kept. *(Click the link if the inline player doesn't load in your browser.)*
 
 ---
 
@@ -129,7 +129,7 @@ voice-verifier/
   LICENSE
   .gitignore
   SCRUB_CHECK.md
-  images/                         duration-aware-threshold.png, profiles.png, result-score.png
+  images/                         screenshots, the threshold chart, and the walkthrough .mp4
   server/                         FastAPI inference server
     embed_server.py               ECAPA embedding + segmentation endpoints
     export_torchscript.py         exports the on-device TorchScript model

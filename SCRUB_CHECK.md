@@ -21,7 +21,7 @@ Covers audio (`*.wav *.m4a *.caf *.mp4 *.mov`), weights (`*.pt *.pth *.ckpt`,
 `__pycache__/`, and `.DS_Store`.
 
 ## What ships
-- `README.md`, `images/` (3 PNGs — UI + the duration-aware-threshold chart), `LICENSE`.
+- `README.md`, `images/` (4 PNGs — UI screenshots + the duration-aware-threshold chart — and a 1-minute UI walkthrough `.mp4`; the video shows the app interface only, no distributable voice data), `LICENSE`.
 - `server/` — `embed_server.py`, `export_torchscript.py`, pinned `requirements.txt`.
 - `ios/` — the Swift/SwiftUI Xcode workspace (both `VoiceVerifier` and
   `VoiceVerifier2` targets), source only, model/audio resources stripped.

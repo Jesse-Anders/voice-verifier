@@ -6,8 +6,8 @@
 *.flac
 *.mp4
 *.mov
-# note: images/voice-verifier-brief-walkthrough.m4v (UI walkthrough, no voice data) is
-# committed intentionally; .m4v is not matched by the rules above.
+# ...except the intentional UI walkthrough (no voice data), committed for the README:
+!images/voice-verifier-brief-walkthrough.mp4
 
 # Model weights / checkpoints — fetched or generated, never committed
 *.pt
