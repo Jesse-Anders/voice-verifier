@@ -6,9 +6,9 @@
 
 ### 🎧 One-minute walkthrough
 
-[![Watch the one-minute walkthrough](images/walkthrough-poster.png)](https://github.com/Jesse-Anders/voice-verifier/blob/main/images/voice-verifier-brief-walkthrough.mp4)
+https://github.com/user-attachments/assets/34fd3157-63fb-47ff-8075-cf0770dff3d3
 
-▶ **[Watch the one-minute walkthrough](https://github.com/Jesse-Anders/voice-verifier/blob/main/images/voice-verifier-brief-walkthrough.mp4)** — click the image above (or this link) for a quick tour of the basic app flow: enroll a speaker, run a recording through, and see which speech is kept. GitHub opens the clip in its built-in player.
+A one-minute tour of the basic app flow: enroll a speaker, run a recording through, and watch which speech is kept.
 
 ---
 
