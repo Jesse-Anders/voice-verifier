@@ -6,8 +6,6 @@
 *.flac
 *.mp4
 *.mov
-# ...except the intentional UI walkthrough (no voice data), committed for the README:
-!images/voice-verifier-brief-walkthrough.mp4
 
 # Model weights / checkpoints — fetched or generated, never committed
 *.pt

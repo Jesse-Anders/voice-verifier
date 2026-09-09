@@ -129,7 +129,7 @@ voice-verifier/
   LICENSE
   .gitignore
   SCRUB_CHECK.md
-  images/                         screenshots, the threshold chart, and the walkthrough .mp4
+  images/                         screenshots and the duration-aware-threshold chart
   server/                         FastAPI inference server
     embed_server.py               ECAPA embedding + segmentation endpoints
     export_torchscript.py         exports the on-device TorchScript model
